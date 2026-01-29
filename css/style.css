@@ -88,6 +88,29 @@ body {
     height: auto;
 }
 
+.download-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.qr-code-container {
+    display: none;
+}
+
+.qr-code-text {
+    font-size: 0.875rem;
+    color: #6e6e73;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.qr-code {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 /* Features Section */
 .features {
     padding: 80px 0;
@@ -337,6 +360,8 @@ body {
 
     .feature-row.reverse {
         direction: ltr;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .phone-mockup {
@@ -363,5 +388,12 @@ body {
 
     .cta-section p {
         font-size: 1rem;
+    }
+}
+
+/* Desktop only - Show QR code */
+@media (min-width: 769px) {
+    .qr-code-container {
+        display: block;
     }
 } 
