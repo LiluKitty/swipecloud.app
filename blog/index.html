@@ -40,6 +40,110 @@
     <link rel="apple-touch-icon" href="../images/app-icon.jpg">
 
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .guides-section {
+            padding: 60px 0 100px;
+            background: #f8f9fa;
+            min-height: 60vh;
+        }
+        .guides-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .guides-header h1 {
+            font-size: 2.2rem;
+            color: #1d1d1f;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .guides-header p {
+            color: #6e6e73;
+            font-size: 1.1rem;
+        }
+        .guides-list {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .guide-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 24px 28px;
+            background: #ffffff;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border: 1px solid #e5e5e7;
+        }
+        .guide-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            border-color: #667eea;
+        }
+        .guide-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            flex-shrink: 0;
+        }
+        .guide-content {
+            flex: 1;
+        }
+        .guide-content h3 {
+            font-size: 1.15rem;
+            color: #1d1d1f;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+        .guide-content p {
+            font-size: 0.95rem;
+            color: #6e6e73;
+            margin: 0;
+            line-height: 1.5;
+        }
+        .guide-arrow {
+            color: #c7c7cc;
+            font-size: 1.2rem;
+            transition: transform 0.2s ease;
+        }
+        .guide-item:hover .guide-arrow {
+            transform: translateX(4px);
+            color: #667eea;
+        }
+        @media (max-width: 768px) {
+            .guides-section {
+                padding: 40px 0 60px;
+            }
+            .guides-header h1 {
+                font-size: 1.75rem;
+            }
+            .guides-list {
+                padding: 0 16px;
+            }
+            .guide-item {
+                padding: 18px 20px;
+                gap: 16px;
+            }
+            .guide-icon {
+                width: 48px;
+                height: 48px;
+                font-size: 1.4rem;
+            }
+            .guide-content h3 {
+                font-size: 1.05rem;
+            }
+            .guide-content p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -51,62 +155,62 @@
         </div>
     </header>
 
-    <section class="hero" style="padding: 60px 0 40px;">
+    <section class="guides-section">
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title" style="font-size: 2.5rem;">iPhone Storage Tips</h1>
-                <p class="hero-subtitle">Expert guides to free up space on your iPhone</p>
+            <div class="guides-header">
+                <h1>iPhone Storage Guides</h1>
+                <p>Expert tips to free up space on your iPhone</p>
             </div>
-        </div>
-    </section>
-
-    <section class="blog-section" style="padding: 40px 0 80px;">
-        <div class="container">
-            <div class="blog-grid">
-                <a href="clean-up-iphone-storage.html" class="blog-card-home">
-                    <div class="blog-card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <span class="blog-card-icon">🧹</span>
+            <div class="guides-list">
+                <a href="clean-up-iphone-storage.html" class="guide-item">
+                    <div class="guide-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span>🧹</span>
                     </div>
-                    <div class="blog-card-content">
+                    <div class="guide-content">
                         <h3>How to Clean Up iPhone Storage</h3>
                         <p>7 proven ways to free up gigabytes of space fast</p>
                     </div>
+                    <span class="guide-arrow">→</span>
                 </a>
-                <a href="delete-duplicate-photos-iphone.html" class="blog-card-home">
-                    <div class="blog-card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                        <span class="blog-card-icon">📸</span>
+                <a href="delete-duplicate-photos-iphone.html" class="guide-item">
+                    <div class="guide-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span>📸</span>
                     </div>
-                    <div class="blog-card-content">
+                    <div class="guide-content">
                         <h3>Delete Duplicate Photos Free</h3>
                         <p>Find and remove duplicate photos in minutes</p>
                     </div>
+                    <span class="guide-arrow">→</span>
                 </a>
-                <a href="iphone-storage-full-after-deleting.html" class="blog-card-home">
-                    <div class="blog-card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                        <span class="blog-card-icon">❓</span>
+                <a href="iphone-storage-full-after-deleting.html" class="guide-item">
+                    <div class="guide-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <span>❓</span>
                     </div>
-                    <div class="blog-card-content">
+                    <div class="guide-content">
                         <h3>Storage Full After Deleting?</h3>
                         <p>7 fixes when storage won't clear</p>
                     </div>
+                    <span class="guide-arrow">→</span>
                 </a>
-                <a href="clear-iphone-cache.html" class="blog-card-home">
-                    <div class="blog-card-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
-                        <span class="blog-card-icon">⚡</span>
+                <a href="clear-iphone-cache.html" class="guide-item">
+                    <div class="guide-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <span>⚡</span>
                     </div>
-                    <div class="blog-card-content">
+                    <div class="guide-content">
                         <h3>Clear iPhone Cache</h3>
                         <p>Speed up your iPhone by clearing cache</p>
                     </div>
+                    <span class="guide-arrow">→</span>
                 </a>
-                <a href="iphone-other-storage.html" class="blog-card-home">
-                    <div class="blog-card-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
-                        <span class="blog-card-icon">📊</span>
+                <a href="iphone-other-storage.html" class="guide-item">
+                    <div class="guide-icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <span>📊</span>
                     </div>
-                    <div class="blog-card-content">
+                    <div class="guide-content">
                         <h3>What is "Other" Storage?</h3>
                         <p>Understand and reduce mysterious storage</p>
                     </div>
+                    <span class="guide-arrow">→</span>
                 </a>
             </div>
         </div>
