@@ -72,6 +72,72 @@
     }
     </script>
 
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is SwipeCloud free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, SwipeCloud is completely free to download and use. You can back up photos to cloud services, delete duplicates, and clean social media files without any cost."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does SwipeCloud have access to my private photos and videos?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No, SwipeCloud does not access or store your private photos and videos. Everything runs locally on your device. Our algorithms only analyze your media to find duplicates and similar files. Your data never leaves your iPhone unless you choose to upload it to your own cloud accounts."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does SwipeCloud delete duplicate photos?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "SwipeCloud scans your photo library locally on your device to find duplicate and similar photos. It identifies exact duplicates, similar shots, blurry images, and photos with bad lighting. You can review the results and delete unwanted copies with one tap to free up storage space."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can SwipeCloud find and delete duplicate videos?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, SwipeCloud detects duplicate videos as well as photos. The app scans your video library to find identical or similar video files, helping you remove duplicates and reclaim significant storage space on your iPhone."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is SwipeCloud Social Clean?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Social Clean is a feature that identifies cached files and media stored on your iPhone from social media apps like Facebook, Instagram, TikTok, WhatsApp, and X. These apps often save content locally without you knowing. Social Clean helps you find and delete this hidden junk to free up storage."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is my data private with SwipeCloud?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, your privacy is our priority. SwipeCloud processes all data locally on your iPhone. We never upload, store, or have access to your photos, videos, or personal data. When you back up to cloud services, files go directly to your own accounts (Google Drive, iCloud, Dropbox, OneDrive)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the Vault feature in SwipeCloud?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The Vault is a secure, private space within SwipeCloud where you can hide sensitive photos and videos. Files in the Vault are protected and hidden from your regular photo library, giving you an extra layer of privacy for personal content."
+                }
+            }
+        ]
+    }
+    </script>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -80,6 +146,7 @@
             <nav class="navbar">
                 <div class="logo">SwipeCloud</div>
                 <div class="nav-links">
+                    <a href="#faq" class="nav-link">FAQ</a>
                     <a href="#featured" class="nav-link">Featured</a>
                     <a href="#blog" class="nav-link">Blog</a>
                 </div>
@@ -163,6 +230,44 @@
                     <div class="benefit-icon">🎯</div>
                     <h4>Simple to Use</h4>
                     <p>Intuitive swipe gestures make it easy for anyone to clean up their iPhone storage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Is SwipeCloud free?</h3>
+                    <p>Yes, SwipeCloud is completely free to download and use.</p>
+                    <p>Back up photos, delete duplicates, and clean social media files without any cost.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Does SwipeCloud access my private photos?</h3>
+                    <p>No. Everything runs locally on your device. Our algorithms only analyze your media to find duplicates.</p>
+                    <p>Your data never leaves your iPhone unless you upload to your own cloud accounts.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How does duplicate detection work?</h3>
+                    <p>SwipeCloud scans your library locally to find duplicate photos and videos, similar shots, blurry images, and photos with bad lighting.</p>
+                    <p>Delete unwanted copies with one tap.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is Social Clean?</h3>
+                    <p>Social Clean finds cached files from Facebook, Instagram, TikTok, WhatsApp, and X.</p>
+                    <p>These files accumulate on your iPhone without you knowing.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is my data private?</h3>
+                    <p>Yes. SwipeCloud processes all data locally.</p>
+                    <p>We never upload, store, or access your photos. Cloud backups go directly to your own accounts.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is the Vault?</h3>
+                    <p>A secure, private space to hide sensitive photos and videos.</p>
+                    <p>Files in the Vault are protected and hidden from your regular photo library.</p>
                 </div>
             </div>
         </div>

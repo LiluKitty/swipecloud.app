@@ -24,6 +24,35 @@ Deep clean social media files from iPhone:
 - Easily delete accumulated social media junk
 - Reclaim storage space from app caches
 
+### 4. Vault
+Secure private space for sensitive content:
+- Hide photos and videos from regular photo library
+- Password protected private storage
+- Extra layer of privacy for personal content
+
+## Frequently Asked Questions
+
+### Is SwipeCloud free?
+Yes, SwipeCloud is completely free to download and use. You can back up photos to cloud services, delete duplicates, and clean social media files without any cost.
+
+### Does SwipeCloud have access to my private photos and videos?
+No, SwipeCloud does not access or store your private photos and videos. Everything runs locally on your device. Our algorithms only analyze your media to find duplicates and similar files - your data never leaves your iPhone unless you choose to upload it to your own cloud accounts.
+
+### How does SwipeCloud delete duplicate photos?
+SwipeCloud scans your photo library locally on your device to find duplicate and similar photos. It identifies exact duplicates, similar shots, blurry images, and photos with bad lighting. You can review the results and delete unwanted copies with one tap.
+
+### Can SwipeCloud find and delete duplicate videos?
+Yes, SwipeCloud detects duplicate videos as well as photos. The app scans your video library to find identical or similar video files, helping you remove duplicates and reclaim significant storage space.
+
+### What is SwipeCloud Social Clean?
+Social Clean identifies cached files and media stored on your iPhone from social media apps like Facebook, Instagram, TikTok, WhatsApp, and X. These apps often save content locally without you knowing. Social Clean helps you find and delete this hidden junk.
+
+### Is my data private with SwipeCloud?
+Yes, your privacy is our priority. SwipeCloud processes all data locally on your iPhone. We never upload, store, or have access to your photos, videos, or personal data. When you back up to cloud services, files go directly to your own accounts.
+
+### What is the Vault feature?
+The Vault is a secure, private space within SwipeCloud where you can hide sensitive photos and videos. Files in the Vault are protected and hidden from your regular photo library, giving you an extra layer of privacy.
+
 ## App Information
 - Platform: iOS (iPhone)
 - Price: Free
@@ -40,7 +69,7 @@ Deep clean social media files from iPhone:
 - Dropbox
 
 ## Privacy
-SwipeCloud does not store or access user files. All data goes directly to the user's own cloud accounts. See privacy policy: https://swipecloud.swipecloud.app/legal/privacy
+SwipeCloud does not store or access user files. All data is processed locally on the device. When backing up to cloud services, files go directly to the user's own accounts. See privacy policy: https://swipecloud.swipecloud.app/legal/privacy
 
 ## Contact
 - Email: support@lilucat.com
