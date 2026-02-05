@@ -1,0 +1,48 @@
+# SwipeCloud - iPhone Storage Cleaner App
+# https://swipecloud.app
+
+## About SwipeCloud
+SwipeCloud is a free iOS app that helps users clean up iPhone storage by swiping photos and videos to cloud services. Instead of deleting precious memories, users can easily back them up to their favorite cloud platforms.
+
+## Key Features
+
+### 1. Swipe to Cloud
+Turn photo organization into a fun game with intuitive swipe gestures:
+- Swipe RIGHT to upload to cloud (Google Drive, OneDrive, Dropbox, iCloud)
+- Swipe LEFT to keep media local
+- Delete originals after upload to free up space instantly
+
+### 2. Delete Duplicate Photos & Videos
+Automatically detect and remove duplicates:
+- Find duplicate photos and videos
+- Identify blurry images and bad lighting shots
+- One-tap deletion of unwanted files
+
+### 3. Social Clean
+Deep clean social media files from iPhone:
+- Identifies cached files from Facebook, Instagram, TikTok, WhatsApp, X
+- Easily delete accumulated social media junk
+- Reclaim storage space from app caches
+
+## App Information
+- Platform: iOS (iPhone)
+- Price: Free
+- App Store ID: 6756659204
+- Download: https://apps.apple.com/app/apple-store/id6756659204
+- Developer: Lilucat
+- Website: https://swipecloud.app
+- Support: support@lilucat.com
+
+## Supported Cloud Services
+- iCloud
+- Google Drive
+- OneDrive
+- Dropbox
+
+## Privacy
+SwipeCloud does not store or access user files. All data goes directly to the user's own cloud accounts. See privacy policy: https://swipecloud.swipecloud.app/legal/privacy
+
+## Contact
+- Email: support@lilucat.com
+- Website: https://swipecloud.app
+- Developer: https://lilucat.com
