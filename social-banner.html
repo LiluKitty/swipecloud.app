@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwipeCloud Social Banner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .banner {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            border-radius: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+        }
+
+        .banner::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+        }
+
+        .content {
+            z-index: 1;
+            max-width: 600px;
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 50px;
+            margin-bottom: 30px;
+        }
+
+        .app-badge span {
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .app-badge img {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.2);
+        }
+
+        .subtitle {
+            color: rgba(255,255,255,0.9);
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .feature-tag {
+            background: rgba(255,255,255,0.25);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .visual {
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .app-icon-large {
+            width: 200px;
+            height: 200px;
+            border-radius: 45px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .cloud-icons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .cloud-icon {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .arrow {
+            font-size: 48px;
+            color: white;
+            opacity: 0.8;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translateX(0); opacity: 0.8; }
+            50% { transform: translateX(10px); opacity: 1; }
+        }
+
+        .instructions {
+            margin-top: 30px;
+            background: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            max-width: 1200px;
+        }
+
+        .instructions h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .instructions p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .instructions code {
+            background: #f0f0f0;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="banner" id="banner">
+            <div class="content">
+                <div class="app-badge">
+                    <img src="images/app-icon.jpg" alt="SwipeCloud">
+                    <span>SwipeCloud</span>
+                </div>
+                <h1>Clean Up iPhone Storage</h1>
+                <p class="subtitle">Swipe photos & videos to your favorite cloud</p>
+                <div class="features">
+                    <span class="feature-tag">iCloud</span>
+                    <span class="feature-tag">Google Drive</span>
+                    <span class="feature-tag">Dropbox</span>
+                    <span class="feature-tag">OneDrive</span>
+                </div>
+            </div>
+            <div class="visual">
+                <span class="arrow">→</span>
+                <div class="cloud-icons">
+                    <div class="cloud-icon">☁️</div>
+                    <div class="cloud-icon">📱</div>
+                    <div class="cloud-icon">✨</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>How to save this banner:</h3>
+            <p>
+                1. Open this file in Chrome/Safari<br>
+                2. Right-click the banner above → "Inspect" → Select the banner element<br>
+                3. Right-click → "Capture node screenshot" (Chrome) or use a screenshot tool<br>
+                4. Or use <code>Cmd + Shift + 4</code> on Mac to screenshot the banner area<br>
+                5. Save as <code>og-image.png</code> in the <code>images</code> folder<br>
+                6. The banner is exactly 1200x630px (optimal for social sharing)
+            </p>
+        </div>
+    </div>
+</body>
+</html>
